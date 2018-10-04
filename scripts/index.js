@@ -1,29 +1,19 @@
-// Yep. It's JavaScript
-// console.log('Hello JavaScript, what is up? I am fine');
 
-// hello.py
-// Getting input
-// It's lame.
+// Hard-coding instead of prompting
+// because in real life, when you want
+// user input, you'll create an HTML form.
 
-// using var
-// and camelCase
-// var promptText = 'What is your name? ';
-// var userName = prompt(promptText);
+// Using backticks for hipster strings.
+const name = `chris aquino`;
+const subject = `feline husbandry`;
 
-// // uses string concatenation
-// var greeting = 'Hello, ' + userName + '!';
-// console.log(greeting);
 
-// ====== now, using SEXY syntax
-// using let and const
-// Rule of thumb: use const until you get an error
-// const PROMPT_TEXT = 'What is your name?';
-// let userName = prompt(PROMPT_TEXT);
-let userName = 'chrisaquino';
-// String interpolation, a.k.a. "template literals"
-// 1. Replace quotes with backticks
-// 2. Remove the + signs
-// 3. Wrap your variables in ${}
-userName = `${userName} is a bozo`;
-const greeting = `Hello, ${userName}!`;
-console.log(greeting);
+// Hipster strings let you do linebreaks!
+const finalText = `${name}'s favorite subject in school is ${subject}.
+
+How lame.`;
+
+// Optionally, you can use \n for linebreaks
+// const finalText = `${name}'s favorite subject in school is ${subject}.\n\nHow lame.`;
+
+console.log(finalText);
