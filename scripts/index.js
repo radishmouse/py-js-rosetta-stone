@@ -11,8 +11,14 @@ const TIP_BAD = 0.1;
 // Processing ===================================
 
 // start with const until something breaks
-const totalBill = 100;
-const levelOfService = `good`;
+// Note: JavaScript will concatenate strings and numbers into strings.
+const totalBill = parseFloat(`292.34`);
+// const totalBill = 292.34;
+const levelOfService = `fair`;
+
+// Tip amount: 43.85099999999999
+// Total amount: 336.191
+
 
 // If you leave off const or let or var
 // you end up with a var.
@@ -29,5 +35,5 @@ if (levelOfService === LEVEL_GOOD) {
 }
 
 // Result ===================================
-console.log(`Tip amount: ${tip}`);
-console.log(`Total amount: ${totalBill + tip}`);
+console.log(`Tip amount: ${tip.toFixed(2)}`);
+console.log(`Total amount: ${(totalBill + tip).toFixed(2)}`);
